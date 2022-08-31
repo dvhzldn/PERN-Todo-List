@@ -1,0 +1,62 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: black;
+	width: 100vw;
+	height: 99vh;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.header {
+	font-size: xx-large;
+	margin-bottom: 1rem;
+	font-family: "Audiowide", sans-serif;
+	color: #39ff14;
+}
+
+.todoList {
+	background: linear-gradient(5deg, #000, #39ff14);
+	border-radius: 5px;
+	width: 100%;
+	height: 80%;
+	padding-top: 2%;
+}
+
+.todos {
+	position: absolute;
+	text-align: left;
+	margin-left: 1%;
+	padding: 0%;
+}
+
+.todos li {
+	font-family: "Sofia", sans-serif;
+	font-size: large;
+	list-style-type: none;
+	color: white;
+	line-height: 2;
+}
+
+.todoNew input,
+.todoNew button {
+	padding: 5px;
+	margin-bottom: 1rem;
+	background-color: white;
+	color: black;
+	height: 100%;
+	font-size: larger;
+	border-radius: 5px;
+	border: 2px solid #39ff14;
+	font-family: "Trirong", sans-serif;
+	transition: 0.3s;
+}
+
+.todoNew button:hover {
+	background-color: black;
+	color: white;
+}
