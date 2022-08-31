@@ -19,31 +19,8 @@ body {
 	color: #39ff14;
 }
 
-.todoList {
-	background: linear-gradient(5deg, #000, #39ff14);
-	border-radius: 5px;
-	width: 100%;
-	height: 80%;
-	padding-top: 2%;
-}
-
-.todos {
-	position: absolute;
-	text-align: left;
-	margin-left: 1%;
-	padding: 0%;
-}
-
-.todos li {
-	font-family: "Sofia", sans-serif;
-	font-size: large;
-	list-style-type: none;
-	color: white;
-	line-height: 2;
-}
-
-.todoNew input,
-.todoNew button {
+.todoAdd input,
+.todoAdd button {
 	padding: 5px;
 	margin-bottom: 1rem;
 	background-color: white;
@@ -56,7 +33,71 @@ body {
 	transition: 0.3s;
 }
 
-.todoNew button:hover {
+.todoAdd button:hover {
 	background-color: black;
 	color: white;
+}
+
+.todoList {
+	background: linear-gradient(5deg, #000, #39ff14);
+	border-radius: 5px;
+	width: 100%;
+	height: 80%;
+	padding-top: 2%;
+}
+
+.todo {
+	display: grid;
+	grid-column: 1 / span 2;
+	text-align: left;
+	margin: 1% 2% 5px 2%;
+	background-color: green;
+}
+
+.todo:hover {
+	background-color: black;
+	transition: 0.2s;
+}
+
+.todo li {
+	margin-left: 25px;
+	font-family: "Sofia", sans-serif;
+	font-size: large;
+	list-style-type: none;
+	color: white;
+	line-height: 2;
+}
+
+.delete-button {
+	background-color: tomato;
+	border-radius: 5px;
+	margin-left: 2px;
+	margin-top: 5px;
+	font-size: 1.2em;
+	position: fixed;
+	vertical-align: middle;
+}
+
+.edit-button {
+	text-transform: uppercase;
+	background-color: black;
+	color: #39ff14;
+	margin-top: 11px;
+	padding: 2px;
+	font-size: 0.5em;
+	position: fixed;
+	margin-left: 285px;
+	vertical-align: middle;
+	font-family: "Audiowide", sans-serif;
+}
+
+.complete-button {
+	text-transform: uppercase;
+	margin-top: 11px;
+	padding: 2px;
+	font-size: 0.5em;
+	position: fixed;
+	margin-left: 319px;
+	vertical-align: middle;
+	font-family: "Audiowide", sans-serif;
 }

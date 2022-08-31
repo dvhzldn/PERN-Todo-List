@@ -1,22 +1,32 @@
-const newToDoItem = () => {
+const app = () => {
 	const addTodo = document.querySelector(".addTodoButton");
 	let newTodo = document.querySelector(".todoInput");
-	let todos = document.querySelector(".todos");
+	let todoList = document.querySelector(".todos");
+	let todoKey = 0;
 
-	addTodo.addEventListener("click", addNewTodo);
+	addTodo.addEventListener("click", NewTodo);
 	newTodo.addEventListener("keypress", function (e) {
 		if (e.key === "Enter") {
-			addNewTodo();
+			NewTodo();
 		}
 	});
 
-	function addNewTodo() {
-		console.log("Task added: " + newTodo.value);
-		todos.innerHTML += `<div class="todo">
-        <li class="font-effect-outline">${newTodo.value}</li>
+	function NewTodo() {
+		todoText = newTodo.value;
+		todoKey += 1;
+		todoList.innerHTML += `<div class="todo" key=${todoKey}>
+        <button class="delete-button">X</button>
+        <li class="font-effect-outline">${todoText}</li>
+        <button class="complete-button">Done</button>
+        <button class="edit-button">Edit</button>
         </div>`;
+		console.log("Task added: " + newTodo.value);
 		newTodo.value = "";
+	}
+
+	function deleteToDo() {
+		console.log("Task deleted: " + newTodo.value);
 	}
 };
 
-newToDoItem();
+app();
