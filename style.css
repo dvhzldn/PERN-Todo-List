@@ -19,6 +19,14 @@ body {
 	color: #39ff14;
 }
 
+.todoAdd input {
+	font-family: "Sofia", sans-serif;
+}
+
+.todoAdd button {
+	font-family: "Trirong", sans-serif;
+}
+
 .todoAdd input,
 .todoAdd button {
 	padding: 5px;
@@ -29,7 +37,6 @@ body {
 	font-size: larger;
 	border-radius: 5px;
 	border: 2px solid #39ff14;
-	font-family: "Trirong", sans-serif;
 	transition: 0.3s;
 }
 
@@ -59,13 +66,19 @@ body {
 	transition: 0.2s;
 }
 
-.todo li {
+li {
 	margin-left: 25px;
-	font-family: "Sofia", sans-serif;
+	font-family: "Trirong", sans-serif;
 	font-size: large;
 	list-style-type: none;
 	color: white;
 	line-height: 2;
+}
+
+.edit-input {
+	margin-left: 25px;
+	font-family: "Trirong", sans-serif;
+	font-size: large;
 }
 
 .delete-button {
@@ -82,7 +95,7 @@ body {
 	text-transform: uppercase;
 	background-color: black;
 	color: #39ff14;
-	margin-top: 11px;
+	margin-top: 9px;
 	padding: 2px;
 	font-size: 0.5em;
 	position: fixed;
@@ -93,11 +106,23 @@ body {
 
 .complete-button {
 	text-transform: uppercase;
-	margin-top: 11px;
+	margin-top: 9px;
 	padding: 2px;
 	font-size: 0.5em;
 	position: fixed;
 	margin-left: 319px;
 	vertical-align: middle;
 	font-family: "Audiowide", sans-serif;
+}
+
+.edit-button:hover {
+	background-color: #39ff14;
+	color: black;
+	transition: 0.3s;
+}
+
+.complete-button:hover {
+	background-color: red;
+	color: white;
+	transition: 0.3s;
 }
