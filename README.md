@@ -1,6 +1,5 @@
-# To-do list web app in JavaScript
-
-A simple and lightweight to-do list.
+# ReactJS Todo list
+A full-stack todo list web app written in JavaScript on a PERN stack (PostgreSQL, Express, ReactJS and NodeJS).
 
 ## Features
 
