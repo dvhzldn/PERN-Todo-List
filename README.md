@@ -1,4 +1,4 @@
-# ReactJS Todo list
+# PERN Todo list
 A full-stack todo list web app written in JavaScript on a PERN stack (PostgreSQL, Express, ReactJS and NodeJS).
 
 ## Features
